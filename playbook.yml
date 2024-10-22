@@ -12,7 +12,7 @@
       changed_when: false
       failed_when: false
     - name: Set Python binary based on version check
-       set_fact:
+      set_fact:
          ansible_python_interpreter: "{{ '/usr/bin/python3' if 'Python 3' in python_version_check.stdout else '/usr/bin/python' }}"
     # - name: Ping the hosts to test connectivity
     #   ansible.builtin.ping:
