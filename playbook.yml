@@ -4,8 +4,8 @@
   become: true
   gather_facts: no  # Wyłącza zbieranie faktów, ponieważ nie są potrzebne do testu ping
   tasks:
-    - name: Ping the hosts to test connectivity
-      ansible.builtin.ping:
+    # - name: Ping the hosts to test connectivity
+    #   ansible.builtin.ping:
     - name: Create folder
       ansible.builtin.file:
         path: /testowy  # Ścieżka do folderu, który chcesz utworzyć
