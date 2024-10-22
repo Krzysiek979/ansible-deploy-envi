@@ -2,7 +2,7 @@
 - name: Test connectivity to hosts
   hosts: all  # Możesz określić konkretną grupę hostów np. "webservers"
   become: true
-  gather_facts: no  # Wyłącza zbieranie faktów, ponieważ nie są potrzebne do testu ping
+  gather_facts: yes
   vars:
     ansible_python_interpreter: "{{ '/usr/bin/python3' if 'Python 3' in python_version_check.stdout else '/usr/bin/python' }}"
   tasks:
