@@ -1,7 +1,7 @@
 ---
 - name: Test connectivity to hosts
   hosts: all  # Możesz określić konkretną grupę hostów np. "webservers"
-  become: false
+  become: true
   gather_facts: yes
   vars:
     ansible_python_interpreter: /usr/bin/python3
