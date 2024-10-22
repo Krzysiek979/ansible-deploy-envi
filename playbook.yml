@@ -5,7 +5,7 @@
   gather_facts: yes
   # vars:
   #   ansible_python_interpreter: "{{ '/usr/bin/python3' if 'Python 3' in python_version_check.stdout else '/usr/bin/python' }}"
-   tasks:
+  tasks:
   #   - name: Check Python version
   #     raw: "python --version || python3 --version"
   #     register: python_version_check
