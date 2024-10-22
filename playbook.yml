@@ -5,3 +5,8 @@
   tasks:
     - name: Ping the hosts to test connectivity
       ansible.builtin.ping:
+    - name: Create folder
+      ansible.builtin.file:
+        path: /testowy  # Ścieżka do folderu, który chcesz utworzyć
+        state: directory
+        mode: '0755'
