@@ -1,7 +1,7 @@
 ---
 - name: Test connectivity to hosts
   hosts: all  # Możesz określić konkretną grupę hostów np. "webservers"
-  become: true
+  become: false
   gather_facts: yes
   # vars:
   #   ansible_python_interpreter: "{{ '/usr/bin/python3' if 'Python 3' in python_version_check.stdout else '/usr/bin/python' }}"
